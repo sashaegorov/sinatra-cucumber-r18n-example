@@ -1,0 +1,4 @@
+main:
+  # Try to hack this and run `cucumber`
+  hi: 'Привет!'
+  hello: 'Здравствуйте.'
