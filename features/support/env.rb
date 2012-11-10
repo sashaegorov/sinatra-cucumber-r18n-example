@@ -7,6 +7,7 @@ require File.join(File.dirname(__FILE__), '..', '..', 'lib/sincucr18n.rb')
 require 'capybara'
 require 'capybara/cucumber'
 require 'rspec'
+require 'r18n-core'
 
 Capybara.app = SinCucR18n
 
@@ -14,6 +15,7 @@ class SinCucR18nWorld
   include Capybara::DSL
   include RSpec::Expectations
   include RSpec::Matchers
+  include R18n::Helpers
 end
 
 World do
